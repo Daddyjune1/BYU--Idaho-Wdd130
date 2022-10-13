@@ -1,0 +1,164 @@
+/* si vous utilisez des polices Google, remplacez les noms de police ci-dessous par vos polices.
+Tous les espaces dans le nom de votre police doivent être remplacés par un +.
+Les polices sont séparées par un & */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+:racine {
+  /* changez les valeurs ci-dessous pour vos couleurs de votre palette */
+  --couleur primaire : #396E94 ;
+  --secondaire-couleur : #E7C24F ;
+  --accent1-color : #A42212 ;
+  --accent2-color : blanc ;
+
+  /* remplacez les valeurs ci-dessous par la ou les polices de votre choix */
+  --heading-font: "IM Fell French Canon" ;
+  --paragraph-font : Lato, Helvetica, sans empattement ;
+
+  /* ces couleurs ci-dessous doivent être choisies parmi les couleurs de votre palette ci-dessus */
+  --headline-color-on-white : #396E94 ; /* titres sur fond blanc */
+  --headline-color-on-color : blanc ; /* titres sur fond coloré */
+  --paragraphe-couleur-sur-blanc : #396E94 ; /* Texte du paragraphe sur fond blanc */
+  --paragraphe-couleur-sur-couleur : blanc ; /* Texte du paragraphe sur fond coloré */
+  --paragraph-background-color: #396E94 ;
+  --nav-link-color : #396E94 ;
+  --nav-background-color : #D4AC0D ;
+  --nav-hover-link-color : blanc ;
+  --nav-hover-background-color : #396E94 ;
+}
+
+
+/* Regardez ci-dessous...mais NE CHANGEZ RIEN ! */
+
+corps {
+  largeur maximale : 960px ;
+  marge : 0 automatique ;
+  rembourrage : 4em ;
+  taille de police : 18 px ;
+  aligner le texte : centrer ;
+}
+image {
+  bloc de visualisation;
+  marge : 0 automatique ;
+  largeur maximale : 300px ;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family : var(--heading-font);
+  couleur : var(--headline-color-on-white);
+}
+h2 {
+  aligner le texte : centrer ;
+}
+heure {
+  hauteur : 3px ;
+  marge : 35px 0 ;
+  arrière-plan : var(--accent1-color);
+}
+entête {
+  rembourrage : 1em ;
+  aligner le texte : centrer ;
+  couleur : var(--paragraphe-couleur-sur-couleur);
+  couleur d'arrière-plan : var(--paragraphe-couleur-d'arrière-plan) ;
+}
+en-tête > h1, en-tête > h2 {
+  couleur : var(--headline-color-on-color);
+}
+p {
+  font-family : var(--paragraph-font);
+  couleur : var(--paragraphe-color);
+  rembourrage : 1em ;
+}
+.couleurs {
+  largeur : 100 % ;
+  largeur min : 350 px ;
+  marge : 30px automatique ;
+  aligner le texte : centrer ;
+}
+.colors e {
+  couleur de fond : #999 ;
+}
+.colors td{
+  largeur : 25 % ;
+  hauteur : 3em ;
+}
+.primaire {
+  couleur de fond : var(--couleur-primaire);
+}
+.secondaire {
+  couleur de fond : var(--couleur-secondaire);
+}
+.accent1 {
+  couleur de fond : var(--accent1-color);
+}
+.accent2{
+  couleur de fond : var(--accent2-color);
+}
+p.coloré {
+  couleur d'arrière-plan : var(--paragraphe-couleur-d'arrière-plan) ;
+  couleur : var(--paragraphe-couleur-sur-couleur);
+}
+navigation {
+  couleur de fond : var(--nav-background-color);
+  hauteur de ligne : 3 em ;
+  aligner le texte : centrer ;
+  taille de police : 1,2 em ;
+}
+navigation {
+  type de style de liste : aucun ;
+  affichage : flexible ;
+}
+nav un {
+  rembourrage : 1 em ;
+  largeur min : 120 px ;
+  décoration de texte : aucune ;
+  rembourrage : 10px ;
+}
+nav a:link, nav a:visited {
+  couleur : var(--nav-link-color);
+}
+nav a:hover {
+  couleur : var(--nav-hover-link-color);
+  couleur de fond : var(--nav-hover-background-color);
+}
+.sitemap {
+  affichage : grille ;
+  justifier-contenu : centrer ;
+
+  grille-modèle-colonnes : répéter (6, 15 % );
+  grille-modèle-lignes : 3em 1,5em 1,5em 3em ;
+  grid-template-areas: ". . home home . ."
+    ". . . Haut . ."
+    ". gauche gauche droite droite ."
+    "page2 page2 . . page3 page3" ;
+}
+.sitemap > div {
+  aligner le texte : centrer ;
+}
+.sm-home {
+  zone de grille : maison ;
+  couleur d'arrière-plan : #ccc ;
+  hauteur de ligne : 3 em ;
+}
+.sm-page2 {
+  zone de grille : page2 ;
+  couleur d'arrière-plan : #ccc ;
+  hauteur de ligne : 3 em ;
+}
+.sm-page3 {
+  zone de grille : page3 ;
+  couleur d'arrière-plan : #ccc ;
+  hauteur de ligne : 3 em ;
+}
+.Haut {
+  zone de grille : haut ;
+  bordure gauche : 1 pixel solide ;
+}
+.la gauche {
+  zone de grille : gauche ;
+  bordure supérieure : 1 pixel solide ;
+  bordure gauche : 1 pixel solide ;
+}
+.droit {
+  zone de grille : droite ;
+  bordure supérieure : 1 pixel solide ;
+  bordure droite : 1 pixel solide ;
+}
